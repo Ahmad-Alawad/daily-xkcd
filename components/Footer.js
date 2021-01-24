@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import styles from '../styles.module.css'
 export default function Footer(props){
     return(
 
@@ -7,8 +7,8 @@ export default function Footer(props){
             <h1>Previous {props.data.length}</h1>
             {props.data.map(data =>{
                return( <Link href ="/comics/[num].js" as ={`/comics/${data.num}`} key={data.num}>
-                    <a style={{textDecoration:'none', color:"black",margin: "10px"}}>#{data.num}    </a>
-                </Link>)
+                            <a className={styles.comics}>#{data.num}</a>
+                        </Link>)
             })}
             <h3>@copyright Ahmad</h3>
         </footer>

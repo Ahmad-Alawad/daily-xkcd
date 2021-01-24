@@ -1,12 +1,26 @@
 .hello {
   font: 15px Helvetica, Arial, sans-serif;
   background: #eee;
-  padding: 100px;
+  /* padding: 100px; */
   text-align: center;
   transition: 100ms ease-in background;
   margin:10px;
+  height: 100vh;
 }
 .hello:hover {
   background: #ccc;
 }
 
+.link{
+  text-decoration: none;
+  color:black;
+  margin: 10px;
+  display: inline-block;
+}
+
+.comics{
+  text-decoration: none;
+  color:black;
+  margin: 10px;
+  display: inline-block;
+}
